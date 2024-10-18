@@ -69,18 +69,93 @@
     <select id="ciudad" required>
         <option value="">Selecciona tu ciudad</option>
         <!-- Lista completa de ciudades de Colombia -->
-        <option value="Bogotá">Bogotá</option>
-        <option value="Medellín">Medellín</option>
-        <option value="Cali">Cali</option>
-        <option value="Neiva">Neiva</option>
-        <option value="Gigante">Gigante</option>
-        <option value="San Agustín">San Agustin</option>
-        <option value="Pitalito">Pitalito</option>
-        <option value="Santa Marta">Santa Marta</option>
-        <option value="Bucaramanga">Bucaramanga</option>
-        <!-- Añade más ciudades aquí -->
-    </select>
+        Aquí tienes el código actualizado con todas las ciudades principales de Colombia en el menú desplegable, para que puedas seleccionarlas en el formulario:
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Catálogo de Zapatos - DaMar E-Shop13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Catálogo de Zapatos - DaMar E-Shop13</h1>
+<p>Selecciona los zapatos que deseas comprar y la cantidad. Al presionar "Comprar", serás redirigido a WhatsApp para finalizar el proceso.</p>
+
+<form id="purchaseForm">
+    <h2>Datos del Cliente</h2>
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+    <input type="text" id="direccion" placeholder="Dirección" required>
+
+    <select id="ciudad" required>
+        <option value="">Selecciona tu ciudad</option>
+        <option value="Arauca">Arauca</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Barranquilla">Barranquilla</option>
+        <option value="Bogotá">Bogotá</option>
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="Cali">Cali</option>
+        <option value="Cartagena">Cartagena</option>
+        <option value="Cúcuta">Cúcuta</option>
+        <option value="Florencia">Florencia</option>
+        <option value="Ibagué">Ibagué</option>
+        <option value="Leticia">Leticia</option>
+        <option value="Manizales">Manizales</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Montería">Montería</option>
+        <option value="Neiva">Neiva</option>
+        <option value="Pasto">Pasto</option>
+        <option value="Pereira">Pereira</option>
+        <option value="Popayán">Popayán</option>
+        <option value="Quibdó">Quibdó</option>
+        <option value="Riohacha">Riohacha</option>
+        <option value="San Andrés">San Andrés</option>
+        <option value="Santa Marta">Santa Marta</option>
+        <option value="Sincelejo">Sincelejo</option>
+        <option value="Tunja">Tunja</option>
+        <option value="Valledupar">Valledupar</option>
+        <option value="Villavicencio">Villavicencio</option>
+        <option value="Yopal">Yopal</option>
+        <!-- Añade más ciudades si lo consideras necesario -->
+    </select>
     <div id="catalogoZapatos">
         <!-- Sección de Adidas -->
         <div id="adidas">
