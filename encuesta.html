@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Catálogo de Zapatos - DaMar E-Shop13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .catalog-section {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .catalog-section h2 {
+            margin-bottom: 10px;
+        }
+        .catalog-item {
+            margin-bottom: 10px;
+        }
+        .quantity-input, .size-input {
+            width: 60px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Catálogo de Zapatos - DaMar E-Shop13</h1>
+<p>Selecciona los zapatos que deseas comprar y la cantidad. Al presionar "Comprar", serás redirigido a WhatsApp para finalizar el proceso.</p>
+
+<form id="purchaseForm">
+    <h2>Datos del Cliente</h2>
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="apellido" placeholder="Apellido" required>
+    <input type="text" id="direccion" placeholder="Dirección" required>
+
+    <select id="ciudad" required>
+        <option value="">Selecciona tu ciudad</option>
+        <!-- Lista completa de ciudades de Colombia -->
+        <option value="Bogotá">Bogotá</option>
+        <option value="Medellín">Medellín</option>
+        <option value="Cali">Cali</option>
+        <!-- Añade más ciudades aquí -->
+    </select>
+
+    <div id="catalogoZapatos">
+        <!-- Sección de Adidas -->
+        <div id="adidas">
+            <div class="catalog-section">
+                <h2>Adidas</h2>
+                <div class="catalog-item">
+                    <label>Adidas 3 (120 mil)
+                        <input type="number" class="quantity-input" id="cantidadAdidas3" value="0" min="0">
+                        <select class="size-input" id="tallaAdidas3">
+                            <option value="">Talla</option>
+                            <!-- Tallas disponibles -->
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="catalog-item">
+                    <label>Adidas Roca (120 mil)
+                        <input type="number" class="quantity-input" id="cantidadAdidasRoca" value="0" min="0">
+                        <select class="size-input" id="tallaAdidasRoca">
+                            <option value="">Talla</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="catalog-item">
+                    <label>Adidas London Caballero (130 mil)
+                        <input type="number" class="quantity-input" id="cantidadAdidasLondon" value="0" min="0">
+                        <select class="size-input" id="tallaAdidasLondon">
+                            <option value="">Talla</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="catalog-item">
+                    <label>Adidas Mickey Caballero (130 mil)
+                        <input type="number" class="quantity-input" id="cantidadAdidasMickey" value="0" min="0">
+                        <select class="size-input" id="tallaAdidasMickey">
+                            <option value="">Talla</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="catalog-item">
+                    <label>Adidas Guo Chao (130 mil)
+                        <input type="number" class="quantity-input" id="cantidadAdidasGuo" value="0" min="0">
+                        <select class="size-input" id="tallaAdidasGuo">
+                            <option value="">Talla</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Nike -->
+        <div id="nike">
+            <div class="catalog-section">
+                <h2>Nike</h2>
+                <div class="catalog-item">
+                    <label>Nike Air (120 mil)
+                        <input type="number" class="quantity-input" id="cantidadNikeAir" value="0" min="0">
+                        <select class="size-input" id="tallaNikeAir">
+                            <option value="">Talla</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="catalog-item">
+                    <label>Nike Dunk SB (130 mil)
+                        <input type="number" class="quantity-input" id="cantidadNikeDunkSB" value="0" min="0">
+                        <select class="size-input" id="tallaNikeDunkSB">
+                            <option value="">Talla</option>
+                            <option value="34">34</option>
+                            <option value="35">35
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="catalog-item">
+                        <label>Nike Speed (120 mil)
+                            <input type="number" class="quantity-input" id="cantidadNikeSpeed" value="0" min="0">
+                            <select class="size-input" id="tallaNikeSpeed">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="catalog-item">
+                        <label>Nike Air Max (120 mil)
+                            <input type="number" class="quantity-input" id="cantidadNikeAirMax" value="0" min="0">
+                            <select class="size-input" id="tallaNikeAirMax">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Sección de Jordan -->
+            <div id="jordan">
+                <div class="catalog-section">
+                    <h2>Jordan</h2>
+                    <div class="catalog-item">
+                        <label>Jordan Retro 4 (130 mil)
+                            <input type="number" class="quantity-input" id="cantidadJordanRetro4" value="0" min="0">
+                            <select class="size-input" id="tallaJordanRetro4">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="catalog-item">
+                        <label>Jordan Retro Legacy (130 mil)
+                            <input type="number" class="quantity-input" id="cantidadJordanRetroLegacy" value="0" min="0">
+                            <select class="size-input" id="tallaJordanRetroLegacy">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="catalog-item">
+                        <label>Jordan Dunk Low (130 mil)
+                            <input type="number" class="quantity-input" id="cantidadJordanDunkLow" value="0" min="0">
+                            <select class="size-input" id="tallaJordanDunkLow">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="catalog-item">
+                        <label>Jordan Vuelo 5 (130 mil)
+                            <input type="number" class="quantity-input" id="cantidadJordanVuelo5" value="0" min="0">
+                            <select class="size-input" id="tallaJordanVuelo5">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Sección de Puma -->
+            <div id="puma">
+                <div class="catalog-section">
+                    <h2>Puma</h2>
+                    <div class="catalog-item">
+                        <label>Puma Unnitled Caballero (120 mil)
+                            <input type="number" class="quantity-input" id="cantidadPumaUnnitled" value="0" min="0">
+                            <select class="size-input" id="tallaPumaUnnitled">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="catalog-item">
+                        <label>Puma Ston (120 mil)
+                            <input type="number" class="quantity-input" id="cantidadPumaSton" value="0" min="0">
+                            <select class="size-input" id="tallaPumaSton">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="catalog-item">
+                        <label>Puma Deportivo (130 mil)
+                            <input type="number" class="quantity-input" id="cantidadPumaDeportivo" value="0" min="0">
+                            <select class="size-input" id="tallaPumaDeportivo">
+                                <option value="">Talla</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button type="button" onclick="sendOrder()">Comprar</button>
+    </form>
+    
+    <script>
+        function sendOrder() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var direccion = document.getElementById("direccion").value;
+            var ciudad = document.getElementById("ciudad").value;
+            
+            var zapatos = [];
+            var totalZapatos = 0;
+    
+            // Adidas
+            var cantidadAdidas3 = parseInt(document.getElementById("cantidadAdidas3").value);
+            var tallaAdidas3 = document.getElementById("tallaAdidas3").value;
+            if (cantidadAdidas3 > 0 && tallaAdidas3) {
+                zapatos.push("Adidas 3 - 120 mil (Cantidad: " + cantidadAdidas3 + ", Talla: " + tallaAdidas3 + ")");
+                totalZapatos += cantidadAdidas3;
+            }
+    
+            var cantidadAdidasRoca = parseInt(document.getElementById("cantidadAdidasRoca").value);
+            var tallaAdidasRoca = document.getElementById("tallaAdidasRoca").value;
+            if (cantidadAdidasRoca > 0 && tallaAdidasRoca) {
+                zapatos.push("Adidas Roca - 120 mil (Cantidad: " + cantidadAdidasRoca + ", Talla: " + tallaAdidasRoca + ")");
+                totalZapatos += cantidadAdidasRoca;
+            }
+    
+            var cantidadAdidasLondon = parseInt(document.getElementById("cantidadAdidasLondon").value);
+            var tallaAdidasLondon = document.getElementById("tallaAdidasLondon").value;
+            if (cantidadAdidasLondon > 0 && tallaAdidasLondon) {
+                zapatos.push("Adidas London Caballero - 130 mil (Cantidad: " + cantidadAdidasLondon + ", Talla: " + tallaAdidasLondon + ")");
+                totalZapatos += cantidadAdidasLondon;
+            }
+    
+            var cantidadAdidasMickey = parseInt(document.getElementById("cantidadAdidasMickey").value);
+            var tallaAdidasMickey = document.getElementById("tallaAdidasMickey").value;
+            if (cantidadAdidasMickey > 0 && tallaAdidasMickey) {
+                zapatos.push("Adidas Mickey Caballero - 130 mil (Cantidad: " + cantidadAdidasMickey + ", Talla: " + tallaAdidasMickey + ")");
+                totalZapatos += cantidadAdidasMickey;
+            }
+    
+            var cantidadAdidasGuo = parseInt(document.getElementById("cantidadAdidasGuo").value);
+            var tallaAdidasGuo = document.getElementById("tallaAdidasGuo").value;
+            if (cantidadAdidasGuo > 0 && tallaAdidasGuo) {
+                zapatos.push("Adidas Guo Chao - 130 mil (Cantidad: " + cantidadAdidasGuo + ", Talla: " + tallaAdidasGuo + ")");
+                totalZapatos += cantidadAdidasGuo;
+            }
+    
+            // Puma
+            var cantidadPumaUnnitled = parseInt(document.getElementById("cantidadPumaUnnitled").value);
+            var tallaPumaUnnitled = document.getElementById("tallaPumaUnnitled").value;
+            if (cantidadPumaUnnitled > 0 && tallaPumaUnnitled) {
+                zapatos.push("Puma Unnitled Caballero - 120 mil (Cantidad: " + cantidadPumaUnnitled + ", Talla: " + tallaPumaUnnitled + ")");
+                totalZapatos += cantidadPumaUnnitled;
+            }
+    
+            var cantidadPumaSton = parseInt(document.getElementById("cantidadPumaSton").value);
+            var tallaPumaSton = document.getElementById("tallaPumaSton").value;
+            if (cantidadPumaSton > 0 && tallaPumaSton) {
+                zapatos.push("Puma Ston - 120 mil (Cantidad: " + cantidadPumaSton + ", Talla: " + tallaPumaSton + ")");
+                totalZapatos += cantidadPumaSton;
+            }
+    
+            var cantidadPumaDeportivo = parseInt(document.getElementById("cantidadPumaDeportivo").value);
+            var tallaPumaDeportivo = document.getElementById("tallaPumaDeportivo").value;
+            if (cantidadPumaDeportivo > 0 && tallaPumaDeportivo) {
+                zapatos.push("Puma Deportivo - 120 mil (Cantidad: " + cantidadPumaDeportivo + ", Talla: " + tallaPumaDeportivo + ")");
+                totalZapatos += cantidadPumaDeportivo;
+            }
+    
+            // Nike
+            var cantidadNikeAir = parseInt(document.getElementById("cantidadNikeAir").value);
+            var tallaNikeAir = document.getElementById("tallaNikeAir").value;
+            if (cantidadNikeAir > 0 && tallaNikeAir) {
+                zapatos.push("Nike Air - 120 mil (Cantidad: " + cantidadNikeAir + ", Talla: " + tallaNikeAir + ")");
+                totalZapatos += cantidadNikeAir;
+            }
+    
+            var cantidadNikeDunkSB = parseInt(document.getElementById("cantidadNikeDunkSB").value);
+            var tallaNikeDunkSB = document.getElementById("tallaNikeDunkSB").value;
+            if (cantidadNikeDunkSB > 0 && tallaNikeDunkSB) {
+                zapatos.push("Nike Dunk SB - 130 mil (Cantidad: " + cantidadNikeDunkSB + ", Talla: " + tallaNikeDunkSB + ")");
+                totalZapatos += cantidadNikeDunkSB;
+            }
+    
+            var cantidadNikeSpeed = parseInt(document.getElementById("cantidadNikeSpeed").value);
+            var tallaNikeSpeed = document.getElementById("tallaNikeSpeed").value;
+            if (cantidadNikeSpeed > 0 && tallaNikeSpeed) {
+                zapatos.push("Nike Speed - 120 mil (Cantidad: " + cantidadNikeSpeed + ", Talla: " + tallaNikeSpeed + ")");
+                totalZapatos += cantidadNikeSpeed;
+            }
+    
+            var cantidadNikeAirMax = parseInt(document.getElementById("cantidadNikeAirMax").value);
+            var tallaNikeAirMax = document.getElementById("tallaNikeAirMax").value;
+            if (cantidadNikeAirMax > 0 && tallaNikeAirMax) {
+                zapatos.push("Nike Air Max - 120 mil (Cantidad: " + cantidadNikeAirMax + ", Talla: " + tallaNikeAirMax + ")");
+                totalZapatos += cantidadNikeAirMax;
+            }
+    
+            // Jordan
+            var cantidadJordanRetro4 = parseInt(document.getElementById("cantidadJordanRetro4").value);
+            var tallaJordanRetro4 = document.getElementById("tallaJordanRetro4").value;
+            if (cantidadJordanRetro4 > 0 && tallaJordanRetro4) {
+                zapatos.push("Jordan Retro 4 - 130 mil (Cantidad: " + cantidadJordanRetro4 + ", Talla: " + tallaJordanRetro4 + ")");
+                totalZapatos += cantidadJordanRetro4;
+            }
+    
+            var cantidadJordanRetroLegacy = parseInt(document.getElementById("cantidadJordanRetroLegacy").value);
+            var tallaJordanRetroLegacy = document.getElementById("tallaJordanRetroLegacy").value;
+            if (cantidadJordanRetroLegacy > 0 && tallaJordanRetroLegacy) {
+                zapatos.push("Jordan Retro Legacy - 130 mil (Cantidad: " + cantidadJordanRetroLegacy + ", Talla: " + tallaJordanRetroLegacy + ")");
+                totalZapatos += cantidadJordanRetroLegacy;
+            }
+    
+            var cantidadJordanDunkLow = parseInt(document.getElementById("cantidadJordanDunkLow").value);
+            var tallaJordanDunkLow = document.getElementById("tallaJordanDunkLow").value;
+            if (cantidadJordanDunkLow > 0 && tallaJordanDunkLow) {
+                zapatos.push("Jordan Dunk Low - 130 mil (Cantidad: " + cantidadJordanDunkLow + ", Talla: " + tallaJordanDunkLow + ")");
+                totalZapatos += cantidadJordanDunkLow;
+            }
+    
+            var cantidadJordanVuelo5 = parseInt(document.getElementById("cantidadJordanVuelo5").value);
+            var tallaJordanVuelo5 = document.getElementById("tallaJordanVuelo5").value;
+            if (cantidadJordanVuelo5 > 0 && tallaJordanVuelo5) {
+                zapatos.push("Jordan Vuelo 5 - 130 mil (Cantidad: " + cantidadJordanVuelo5 + ", Talla: " + tallaJordanVuelo5 + ")");
+                totalZapatos += cantidadJordanVuelo5;
+            }
+    
+            // Verifica si seleccionaron zapatos
+            if (zapatos.length === 0) {
+                alert("Por favor selecciona al menos un par de zapatos con su talla.");
+                return;
+            }
+    
+            var orderDetails = `Hola, soy ${nombre} ${apellido}, vivo en ${direccion}, ${ciudad}. Quiero comprar los siguientes zapatos:\n` + zapatos.join("\n") + `\nTotal de zapatos: ${totalZapatos}`;
+    
+            var whatsappUrl = "https://wa.me/573170296998?text=" + encodeURIComponent(orderDetails);
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+    
+    </body>
+    </html>
